@@ -1,0 +1,160 @@
+================================================================================ 
+1. Release-wide coding vocabulary (all NGAs)
+
+Value.Note (how a value is qualified):
+Value.Note
+simple       41516
+list          3860
+range         1126
+uncertain      714
+disputed       261 
+
+Most common Value.From entries (presence/absence codes):
+Value.From
+present              13324
+absent                9606
+suspected unknown     6604
+inferred present      4099
+inferred absent       3565
+Edward A L Turner      637
+unknown                525
+Enrico Cioni           452 
+
+Share of NGA-century cells missing (-999) across the 36 social-complexity vars: 41%
+Most-missing vars: {'Mnemonic': 0.77, 'PolTerr': 0.63, 'PolPop': 0.63, 'Bridge': 0.61, 'NonPhWrit': 0.58, 'NonWRecord': 0.57} 
+
+================================================================================ 
+2. Polity sequence in Latium
+
+                              PolName   PolID  Start   End Dupl
+                  Latium - Copper Age ItLatCA  -3600 -1801    n
+                  Latium - Bronze Age ItLatBA  -1800 -1001    n
+                    Latium - Iron Age ItLatIA  -1000  -717    n
+                        Roman Kingdom ItRomRg   -716  -510    n
+                       Roman Republic ItRomER   -509  -265    n
+                Middle Roman Republic ItRomMR   -264  -134    n
+                  Late Roman Republic ItRomLR   -133   -29    n
+            Roman Empire - Principate ItRomPr    -31   283    n
+              Roman Empire - Dominate TrRomDm    284   394    y
+Western Roman Empire - Late Antiquity ItRomWe    395   457    n
+                  Ostrogothic Kingdom ItOstrg    493   554    n
+                 Exarchate of Ravenna ItRav**    568   710    n
+               Republic of St Peter I ItStPet    711   903    n
+       Rome - Republic of St Peter II ItPapEM    904  1197    n
+  Papal States - High Medieval Period ItPapHM   1198  1308    n
+    Papal States - Renaissance Period ItPapRn   1378  1526    n
+     Papal States - Medieval Period I ItPapM1   1527  1647    n
+    Papal States - Medieval Period II ItPapM2   1648  1800    n 
+
+================================================================================ 
+3. Raw coded facts, Latium, Principate -> Ostrogoths -> Papacy
+
+## Polity Population
+ Polity Value.From Value.To Date.From Value.Note
+ItOstrg    5500000      NaN     500CE     simple
+ItRav**    1000000      NaN     600CE       list
+ItRav**    1250000      NaN     700CE       list
+ItRomPr   50000000      NaN       1CE     simple
+ItRomPr   50000000 60000000     100CE      range
+ItRomPr   55000000 70000000     200CE      range
+ItStPet     440000  1333000     800CE      range
+ItStPet     335000  1500000     900CE      range 
+
+## Polity territory
+ Polity Value.From Value.To Date.From Value.Note
+ItOstrg     635000      NaN       NaN     simple
+ItRav**      50000      NaN       NaN     simple
+ItRomPr    4500000      NaN       1CE       list
+ItRomPr    5800000      NaN     100CE       list
+ItRomPr    5000000      NaN     200CE       list
+ItRomPr    4750000      NaN     275CE       list
+ItRomWe    2000000      NaN     400CE     simple
+ItStPet      50000      NaN       NaN     simple 
+
+## Population of the largest settlement
+ Polity Value.From Value.To Date.From Value.Note
+ItOstrg     100000   200000       NaN      range
+ItRav**      30000      NaN     600CE     simple
+ItRav**     100000   125000     700CE      range
+ItRomPr     900000  1100000       1CE      range
+ItRomPr    1000000  1200000     100CE      range
+ItRomPr    1000000      NaN     200CE     simple
+ItRomWe     500000      NaN     400CE     simple
+ItStPet      70000   100000     800CE      range
+ItStPet      40000      NaN     900CE     simple 
+
+## Administrative levels
+ Polity Value.From Value.To Date.From Value.Note
+ItOstrg          5        7       NaN      range
+ItRav**          5        6       NaN      range
+ItRomPr          8        9       NaN      range
+ItRomWe          8      NaN       NaN     simple
+ItStPet          6      NaN       NaN     simple 
+
+## Full-time bureaucrats
+ Polity Value.From Value.To Date.From Value.Note
+ItOstrg    present      NaN       NaN     simple
+ItRav**    present      NaN       NaN     simple
+ItRomPr    present      NaN       NaN     simple
+ItRomWe    present      NaN       NaN     simple
+ItStPet    present      NaN       NaN     simple 
+
+## Professional military officers
+ Polity      Value.From Value.To Date.From Value.Note
+ItOstrg          absent      NaN       NaN     simple
+ItRav**          absent      NaN       NaN     simple
+ItRomPr         present      NaN       NaN     simple
+ItRomWe         present      NaN       NaN     simple
+ItStPet inferred absent      NaN       NaN     simple 
+
+## Courts
+ Polity       Value.From Value.To Date.From Value.Note
+ItOstrg          present      NaN       NaN     simple
+ItRav**          present      NaN       NaN     simple
+ItRomPr           absent      NaN       NaN     simple
+ItRomWe          present      NaN       NaN     simple
+ItStPet inferred present      NaN       NaN     simple 
+
+## Examination system
+ Polity      Value.From Value.To Date.From Value.Note
+ItOstrg inferred absent      NaN       NaN     simple
+ItRav** inferred absent      NaN       NaN     simple
+ItRomPr          absent      NaN       NaN     simple
+ItRomWe          absent      NaN       NaN     simple
+ItStPet          absent      NaN       NaN     simple 
+
+================================================================================ 
+4. Century series for Latium: complexity components (CCs) and SPC, every 200 y
+
+  PolID  Time  SPC  PropCoded  Pop  Terr  Cap  Hier  Gov  Infra  Info  Money
+ItLatCA -3600 3.09      77.27  NaN   NaN  NaN  1.00 0.01   0.03  0.14   0.15
+ItLatCA -3400 3.09      77.27  NaN   NaN  NaN  1.00 0.01   0.03  0.14   0.15
+ItLatCA -3200 3.09      77.27  NaN   NaN  NaN  1.00 0.01   0.03  0.14   0.15
+ItLatCA -3000 3.09      77.27  NaN   NaN  NaN  1.00 0.01   0.03  0.14   0.15
+ItLatCA -2800 3.09      77.27  NaN   NaN  NaN  1.00 0.01   0.03  0.14   0.15
+ItLatCA -2600 3.09      77.27  NaN   NaN  NaN  1.00 0.01   0.03  0.14   0.15
+ItLatCA -2400 3.09      77.27  NaN   NaN  NaN  1.00 0.01   0.03  0.14   0.15
+ItLatCA -2200 3.09      77.27  NaN   NaN  NaN  1.00 0.01   0.03  0.14   0.15
+ItLatCA -2000 3.09      77.27  NaN   NaN  NaN  1.00 0.01   0.03  0.14   0.15
+ItLatBA -1800 2.30      81.82  NaN  0.54 1.54  1.17 0.02   0.03  0.14   0.15
+ItLatBA -1600 2.30      81.82  NaN  0.54 1.54  1.17 0.02   0.03  0.14   0.15
+ItLatBA -1400 2.30      81.82  NaN  0.54 1.54  1.17 0.02   0.03  0.14   0.15
+ItLatBA -1200 2.30      81.82  NaN  0.54 1.54  1.17 0.02   0.03  0.14   0.15
+ItLatIA -1000 3.03      90.91  NaN   NaN 2.30  1.67 0.09   0.03  0.19   0.00
+ItLatIA  -800 3.03      90.91  NaN   NaN 2.30  1.67 0.09   0.03  0.19   0.00
+ItRomRg  -600 4.68      95.45 4.54  3.00 4.55  3.33 0.22   0.52  0.61   0.17
+ItRomER  -400 5.65      95.45 5.18  3.11 4.48  3.67 0.36   0.67  0.89   0.83
+ItRomMR  -200 6.64      95.45 6.57  5.63 5.32  4.83 0.36   0.83  0.91   0.83
+ItRomPr     0 7.76     100.00 7.70  6.65 6.00  8.17 0.65   0.99  0.92   0.83
+ItRomPr   200 7.78     100.00 7.80  6.70 6.00  8.17 0.65   0.99  0.92   0.83
+ItRomWe   400 7.68      95.45  NaN  6.30 5.70  7.50 0.86   0.99  0.92   0.83
+ItRav**   600 6.50     100.00 6.00  4.70 4.48  5.33 0.66   0.83  0.90   0.83
+ItStPet   800 6.55     100.00 5.95  4.70 4.93  5.33 0.64   0.82  0.89   0.83
+ItPapEM  1000 6.45     100.00 5.89  4.15 4.54  5.67 0.91   0.72  0.92   0.67
+ItPapHM  1200 6.55     100.00 5.95  4.64 4.54  4.83 0.82   0.72  0.99   0.83
+ItPapRn  1400 6.52     100.00 5.78  4.64 4.46  4.83 0.91   0.73  0.92   0.83
+ItPapM1  1600 6.77     100.00 6.20  4.64 5.07  4.50 0.83   0.92  1.00   0.83
+ItPapM2  1800 6.87     100.00 6.36  4.64 5.19  5.00 0.83   0.83  0.99   0.90 
+
+Global SPC: mean 4.57, sd 1.63, range 2.30-8.27
+Latium peak SPC 7.79 at 100; min SPC by 800 CE 6.50; drop = 0.79 global sd

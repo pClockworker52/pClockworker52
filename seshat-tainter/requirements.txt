@@ -1,0 +1,11 @@
+# Pinned 2026-10-09, Python 3.13
+pandas==3.0.6
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+statsmodels==0.15.0
+matplotlib==3.11.2
+geopandas==1.2.0
+shapely==2.2.0
+pyogrio==0.13.0
+openpyxl==3.1.5
