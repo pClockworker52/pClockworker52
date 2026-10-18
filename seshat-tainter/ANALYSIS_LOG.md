@@ -129,3 +129,26 @@ Numbered entries. Each entry records the question, script, data release, result 
   - Coverage: population 38%, territory 39%, Gov 88%, Info 85%.
   - **PC1 variance:** complete case 69.8% (n = 292); MI(20) 79.2% ± 0.2%. Loadings near-equal (0.33–0.39).
 - **Verdict:** **the single dimension reproduces on Polaris2026.** Equinox gave 69.4% complete case and 81.4% MI. The grid rules are my own, not Seshat's, so the Phase 5 Equinox-vs-Polaris comparison is also a test of these rules.
+
+## 007 — T1 pipeline, synthetic validation only
+
+- **Date:** 2026-10-18
+- **Code:** `src/tainter_lib.py`, `src/p4_run_t1.py`, `tests/test_synthetic.py`. No real outcome has been computed; on real data only `--dry-run` was used, which prints shapes.
+- **Result on synthetic data:**
+  - The collapse and negative-return detectors pass unit cases.
+  - A planted effect (true OR = 5) is recovered: OR 3.3, CI [2.3, 4.5].
+  - The null gives OR 0.67, CI [0.34, 1.37], i.e. no false positive.
+  - Placebo 95th percentile 1.55, well below the observed effect.
+  - The full runner (MD-drop, MD-MI, MD-worst, placebo, leave-one-NGA-out) recovers the effect: MI OR 3.7, CI [2.0, 7.0].
+- **Design changes forced by the synthetic tests,** made before any real event was seen:
+  1. **Firth-penalised logit** instead of a plain logit, because rare events caused separation.
+  2. **K1 reference scale changed** to the SD of 3-century changes with threshold 2.0. The global SD mostly reflects trend and between-region spread. Peter to confirm.
+- **Not yet implemented:** range-sampling within MD-MI (TODO in the runner docstring).
+
+## 008 — Duplicate NGA-centuries in TSDat123 (blind)
+
+- **Date:** 2026-10-18
+- **Found by:** the real-data `--dry-run`.
+- **Result:** 3 NGA-centuries carry two polities: Galilee −200 (EgPtol1, IrSeleu) and Kansai 700 and 800 (JpAsuka/JpNara*, JpNara*/JpHeian).
+- **Rule (blind):** keep one row per NGA-century, preferring Dupl = n, then higher PropCoded. That leaves 1,491 rows. `sd_delta` now asserts uniqueness.
+- **Note:** the Phase 2 numbers (log 003) used all 1,494 rows. The 3 extra rows make no material difference to PC1, but Phase 5 should use the deduplicated panel throughout.

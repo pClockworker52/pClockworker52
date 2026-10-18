@@ -51,7 +51,8 @@ Common to all blocks:
 Signed off: — (DRAFT)
 - **Question:** is a collapse onset in (t, t+2] more likely after a negative-return episode at t?
 - **Definitions:** C1, B1, R1, K1 (`docs/B2_options.md`)
-- **Model:** discrete-time logit, collapse_onset(t+1..t+2) ~ NegReturn(t) + C(t) + PropCoded(t) + era FE. Fitted on training NGA-centuries at risk (not already in a collapse).
+- **Model:** discrete-time **Firth-penalised** logit (rare events; the synthetic tests showed separation in a plain logit), collapse_onset(t+1..t+2) ~ NegReturn(t) + C(t) + PropCoded(t) + era FE. Fitted on training NGA-centuries at risk (not already in a collapse).
+- **Code:** `src/p4_run_t1.py`, validated on synthetic data (`tests/test_synthetic.py`). It refuses to run until this block is signed.
 - **Statistic:** odds ratio (OR) for NegReturn.
 - **Placebo:** circularly shift each NGA's event sequence (1,000 shifts). The observed OR is compared with the placebo distribution.
 - **PASS if all of these hold:**

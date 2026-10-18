@@ -27,6 +27,7 @@ def fit_c1(train: pd.DataFrame, cols=C_COMPONENTS):
 
 def sd_delta(panel: pd.DataFrame, w: int = 3, c="C") -> float:
     """Pooled SD of w-century changes in C: the reference scale for K1 (★ since 2026-10-18 draft)."""
+    assert not panel.duplicated(["NGA", "Time"]).any(), "panel must have one row per NGA-century"
     ds = []
     for _, g in panel.sort_values("Time").groupby("NGA", sort=False):
         lag = g.set_index("Time")[c].reindex(g.Time - 100 * w).values

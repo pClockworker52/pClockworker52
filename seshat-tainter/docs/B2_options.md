@@ -51,7 +51,8 @@ Measured on C at the NGA level.
 
 | | Definition |
 |---|---|
-| ★ K1 | Drop of **≥ 1.0 SD** of C (SD over training NGA-centuries), from the running maximum of the prior 3 centuries to a point within the next 2 centuries. Must **persist ≥ 2 centuries**, so a single-century coding blip doesn't count. |
+| ★ K1 | Drop of **≥ 2.0 × SD of 3-century changes in C** (pooled over training NGAs) below the running maximum of the prior 3 centuries. Must **persist ≥ 2 centuries**, so a single-century coding blip doesn't count. *Changed 2026-10-18, before any real event was seen:* the synthetic runner test showed that an SD over all NGA-centuries mostly measures between-region and 10,000-year-trend spread, which makes "1 SD" very strict (Rome: 0.79). The SD of *changes* measures "rapid and significant" relative to normal movement. |
+| K1-global | The earlier version: ≥ 1.0 SD of C over all training NGA-centuries. Kept as an alternative. |
 | K2 | Same with 0.5 SD (sensitivity) |
 | K3 | Hier drop of ≥ 1.0 level within 2 centuries, persisting ≥ 2 centuries |
 | K4 | **CrisisDB-coded `collapse` = P/IP** (Polaris2026). Expert-coded, so independent of C. It can only be used **conditional on a crisis**, since CrisisDB lists crises only and absence is not coded. Use: among crises, does a prior negative-return episode raise P(collapse vs decline-only)? |

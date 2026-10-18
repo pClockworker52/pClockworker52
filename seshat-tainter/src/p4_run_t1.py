@@ -39,6 +39,10 @@ def signed(block="T1"):
 
 def build(xlsx):
     ts = pd.read_excel(xlsx, "TSDat123").replace(-999, np.nan)
+    # 3 NGA-centuries carry two polities (Galilee -200, Kansai 700/800): keep one row per NGA-century,
+    # preferring the non-duplicated polity (Dupl == 'n'), then the better-coded one (blind rule, log 008)
+    ts = (ts.sort_values(["Dupl", "PropCoded"], ascending=[True, False])
+            .drop_duplicates(["NGA", "Time"]).sort_values(["NGA", "Time"]).reset_index(drop=True))
     d = ts[KEY + ["PropCoded"]].copy()
     d["Hier"] = ts[["AdmLev", "MilLev", "SettlHier"]].mean(axis=1)
     d["Gov"], d["Info"] = ts[GOV].mean(axis=1), ts[INFO].mean(axis=1)          # missing-as-missing (rule M)
