@@ -73,3 +73,7 @@ The one-page primer is `PRIMER.md`. The Latium walk-through is `src/p1_walkthrou
 **Questions for Peter:**
 1. C1 drops Infra from complexity so that infrastructure can serve as option closure. Tainter would count irrigation and roads as complexity. Is it acceptable that the Tainter test uses a C without infrastructure? The alternative is OC-B (fortification) for Sedentis, with full C for Tainter.
 2. B1 is *total* population supported, not per-capita benefit. Do you accept testing a "scale-supported" proxy, stated as a limitation, or do you consider that a test of something other than Tainter?
+
+**Update on Phase 0 (2026-10-18):** Polaris2026 is on GitHub (`build_polaris_dataset`), and it contains CrisisDB.
+- **The methods lesson:** CrisisDB lists crises. It does *not* say which polity-centuries had none.
+- **Your question to think about:** what is the right "denominator" for asking "do negative returns cause collapse", if the only independent collapse list is conditional on a crisis having happened?

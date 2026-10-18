@@ -1,0 +1,49 @@
+Polaris2026 blind structure check (counts only; no outcome values)
+polities: 626  homeNGAs: 35  seshat_regions: 42
+variables by sheet:
+sheet_name
+CrisisDB - Crisis consequences     1
+General                           21
+Luxury goods                      11
+Religion                          14
+Social complexity                 77
+Warfare                           49
+SC vars with an Equinox counterpart: 77 of 77
+SC vars without Equinox counterpart: []
+disputed share: 0.006  uncertain share: 0.006  range-coded share: 0.127
+
+CrisisDB rows: 166  polities: 150  regions: 35
+CrisisDB column non-null share:
+decline                  1.00
+collapse                 1.00
+epidemic                 1.00
+downward_mobility        1.00
+extermination            1.00
+uprising                 1.00
+revolution               1.00
+successful_revolution    1.00
+civil_war                1.00
+century_plus             1.00
+fragmentation            1.00
+capital                  1.00
+conquest                 1.00
+assassination            1.00
+depose                   1.00
+constitution             1.00
+labor                    1.00
+unfree_labor             1.00
+suffrage                 1.00
+public_goods             1.00
+religion                 1.00
+is_disputed              0.16
+is_uncertain             0.14
+
+holdout NGAs present as homeNGA: ['Basin of Mexico', 'Kachi Plain', 'Middle Yellow River Valley', 'Paris Basin', 'Susiana', 'Valley of Oaxaca']
+
+CrisisDB codebook (pooled unique values across flag columns): ['A', 'DIS', 'IA', 'IP', 'P', 'SU']
+variable_name values: <StringArray>
+['crisis-consequences']
+Length: 1, dtype: str  section: <StringArray>
+['crisisdb-cc']
+Length: 1, dtype: str
+year span coded (min year_from, max year_to): -2200 1942

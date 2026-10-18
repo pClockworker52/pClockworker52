@@ -88,3 +88,21 @@ Numbered entries. Each entry records the question, script, data release, result 
 
   148 pre-agricultural (yield = 0) training rows.
 - **Verdict:** HS3 is testable (below the 0.8 bar). Overlap between OC-A and yield is substantial, so the SIMEX safeguard matters.
+
+## 005 — Polaris2026 located, structure check (blind)
+
+- **Date:** 2026-10-18
+- **Source:** `Seshat-Global-History-Databank/build_polaris_dataset` @ `55ca5fb`. `Polaris2026.xlsx` sha256 `cf60c9f7…6c41`. The repo also holds `Equinox2020.05.2023.xlsx`.
+- **Script:** inline, output in `docs/g2_polaris_structure.txt`. Counts and codebook only.
+- **Result:**
+  - 626 polities, 35 home NGAs (all 6 holdout NGAs present), 42 regions.
+  - **Long format only:** no century grid, so a grid builder is needed for the Phase 5 rerun.
+  - All 77 social-complexity variables map to Equinox names.
+  - Range-coded share 12.7%; disputed and uncertain values each 0.6%.
+  - **CrisisDB sheet:** 166 crises in 150 polities, 35 regions, −2200 to 1942.
+    - 21 consequence flags: decline, collapse, epidemic, fragmentation, conquest, constitution, public goods and others.
+    - Coded A / P / IA / IP / DIS / SU, fully non-null.
+- **Verdict:**
+  - CrisisDB exists publicly inside Polaris.
+  - **It is a list of crises only.** A polity-century *not* in CrisisDB is not coded as "no crisis". Using absence as zero would repeat the moralizing-gods error, so CrisisDB can only be used *conditional on a crisis*.
+  - HS6 moves from "untestable" to "possibly testable within crises" (see PREREG HS6).

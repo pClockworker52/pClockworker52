@@ -54,6 +54,7 @@ Measured on C at the NGA level.
 | ★ K1 | Drop of **≥ 1.0 SD** of C (SD over training NGA-centuries), from the running maximum of the prior 3 centuries to a point within the next 2 centuries. Must **persist ≥ 2 centuries**, so a single-century coding blip doesn't count. |
 | K2 | Same with 0.5 SD (sensitivity) |
 | K3 | Hier drop of ≥ 1.0 level within 2 centuries, persisting ≥ 2 centuries |
+| K4 | **CrisisDB-coded `collapse` = P/IP** (Polaris2026). Expert-coded, so independent of C. It can only be used **conditional on a crisis**, since CrisisDB lists crises only and absence is not coded. Use: among crises, does a prior negative-return episode raise P(collapse vs decline-only)? |
 
 **Turnover rule.**
 - A polity change *without* a qualifying drop in C is not a collapse. This follows from defining collapse on C, not on polity identity.

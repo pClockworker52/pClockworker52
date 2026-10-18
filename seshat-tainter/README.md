@@ -2,7 +2,7 @@
 
 The full brief is in `HANDOFF.md`. This file tracks status and how to continue.
 
-## Status (2026-10-09, prepared on mobile)
+## Status (2026-10-18)
 
 | Phase | State |
 |---|---|
@@ -23,11 +23,7 @@ The full brief is in `HANDOFF.md`. This file tracks status and how to continue.
    ./src/fetch_data.sh
    python -I src/p1_walkthrough_latium.py data/raw/equinox_data/Equinox_on_GitHub_June9_2022.xlsx
    ```
-2. **Get Polaris.** The cloud container couldn't reach seshat-db.com or seshatdatabank.info. From the downloads page:
-   - Get the Polaris2025 (or "Polaris-2026") spreadsheet → `data/raw/polaris/`.
-   - Note the GitHub repo name for Polaris, if there is one. Then it can go into `fetch_data.sh`.
-   - Check whether CrisisDB has a public download.
-   - Get Cliopatria from Zenodo if you want maps (optional, Phase 3).
+2. **Polaris: solved.** `fetch_data.sh` now also clones `Seshat-Global-History-Databank/build_polaris_dataset` (Polaris2026.xlsx, which includes a **CrisisDB** sheet). Cliopatria (Zenodo) is still optional for Phase 3 maps.
 3. **Sign or amend:** `variable_roles.csv`, the ★ choices in `docs/B2_options.md`, and the DRAFT blocks in `PREREG.md`.
 4. **Answer the open questions:**
    - `LEARNING.md` Phase 0 and Phase 1

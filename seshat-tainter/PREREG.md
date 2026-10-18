@@ -114,5 +114,24 @@ Signed off: — (DRAFT, **flagged**)
 Century resolution is likely too coarse to measure abruptness. Proposed: **untestable with Seshat**, unless the K1 events show multi-century falls.
 
 ### HS6 — Legibility: consequence shocks get legible responses
-Signed off: — (DRAFT, **flagged**)
-Equinox has no famine, epidemic or yield-shock variable (coverage scan, log 002). **Untestable with Equinox.** To be reassessed with Polaris and CrisisDB.
+Signed off: — (DRAFT, **flagged; needs Peter's mapping first**)
+- Equinox has no consequence-shock variable (log 002). Polaris2026's CrisisDB has an `epidemic` flag (log 005).
+- **Test, within crises only:** for crises with epidemic = P/IP vs other crises, compare the share with a "Per-type" consequence vs an "Act-type" one.
+- **Mapping to be fixed by Peter before any value is seen:**
+  - Per-type (model or institution revised): `constitution`, `labor`, `suffrage`, `public_goods`, `religion`
+  - Act-type (legible control): `conquest`, `extermination`, `unfree_labor`
+  - Neither: `capital`, `depose`, `assassination`
+- **Caveat:** CrisisDB codes *consequences*, not chosen *responses*. Reading them as Act or Per is interpretive and must be justified before testing.
+- **Minimum:** ≥ 15 epidemic crises; otherwise untestable.
+- **Predictions, within epidemic crises:**
+  - Sedentis (legibility): Act-type ≥ Per-type
+  - Tainter makes no prediction
+  - Scott predicts the same direction. So even a pass is "not distinguishable from Scott", unless a precision/age interaction is pre-specified.
+
+### T1b — Tainter, with CrisisDB as an independent collapse coding
+Signed off: — (DRAFT)
+- **Question:** among CrisisDB crises (training NGAs), is `collapse` = P/IP more likely when a negative-return episode (R1, B1, C1) was present in the 3 centuries before the crisis start?
+- **Model:** logit, clustered by NGA.
+- **PASS if:** OR > 1 with CI excluding 1, same sign under the three missing-data treatments.
+- **FAIL if:** OR ≤ 1.
+- **Value:** the collapse definition comes from independent experts, so it is not built from C. That guards against "defined so as to guarantee the result" (false-positive checklist, item 2).
