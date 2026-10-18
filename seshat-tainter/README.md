@@ -25,7 +25,7 @@ The full brief is in `HANDOFF.md`. This file tracks status and how to continue.
    python -I src/p1_walkthrough_latium.py data/raw/equinox_data/Equinox_on_GitHub_June9_2022.xlsx
    ```
 2. **Polaris: solved.** `fetch_data.sh` now also clones `Seshat-Global-History-Databank/build_polaris_dataset` (Polaris2026.xlsx, which includes a **CrisisDB** sheet). Cliopatria (Zenodo) is still optional for Phase 3 maps.
-3. **Sign or amend:** `variable_roles.csv`, the ★ choices in `docs/B2_options.md`, and the DRAFT blocks in `PREREG.md`.
+3. **Go through `DECISIONS.md`.** It lists every pending choice with a proposal. Then sign `variable_roles.csv` and the DRAFT blocks in `PREREG.md`.
 4. **Answer the open questions:**
    - `LEARNING.md` Phase 0 and Phase 1
    - `SEDENTIS_V2.md` §0 and §6
