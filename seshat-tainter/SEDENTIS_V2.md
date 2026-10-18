@@ -138,3 +138,14 @@ The Metaculus bot failed at a 3-month horizon, where all of Sedentis' structural
 3. Option closure: OC-A, OC-B, or both?
 4. Is #10 (action dissipates, perception conserves) part of v2? If so, it needs a quantitative form first.
 5. Do you accept §5 (a failure at century scale counts)?
+
+---
+
+## 7. Workshop log
+
+### Q1 — Which version is under test? Decided 2026-10-18 (Peter)
+
+- **v1 is the hypothesis. v1.5 is its rival, named in advance.** H-S3 decides between them.
+- **Sedentism is a dose.** Option closure is treated as continuous. The phase-transition claim is dropped as a premise.
+- **Strict reading, committed in advance:** if option closure adds nothing once productivity is controlled for, then **v1 is refuted, and Sedentis survives only as v1.5**. With this data, v1.5 cannot be distinguished from generic dissipative-structure thermodynamics ("Prigogine").
+- **Measurement-error safeguard:** v1 counts as supported only if the option-closure effect clears a size fixed in PREREG and survives a measurement-error sensitivity check on the productivity control. The size is not yet set.
