@@ -29,7 +29,7 @@ def test_neg_return():
     assert np.isnan(nr[:3]).all() and nr[3] == 0 and nr[4] == 1, nr
 
 
-def simulate(effect_or, n_nga=30, T=60, seed=1):
+def simulate(effect_or, n_nga=30, T=60, seed=1, drop=1.5, growth=0.1):
     rng = np.random.default_rng(seed)
     rows = []
     for k in range(n_nga):
@@ -40,7 +40,7 @@ def simulate(effect_or, n_nga=30, T=60, seed=1):
             # negative-return state from the last 3 centuries
             nr = len(C) >= 4 and (C[-1] - C[-4] > 0) and (B[-1] - B[-4] <= 0)
             p = 0.02 * (effect_or if nr else 1.0)
-            c = c_prev - 1.5 if rng.random() < p else c_prev + 0.1 + rng.normal(0, 0.05)
+            c = c_prev - drop if rng.random() < p else c_prev + growth + rng.normal(0, 0.05)
             C.append(c)
             B.append(np.sqrt(max(c, 0) + 1) + noise)
         rows.append(pd.DataFrame({"NGA": f"n{k}", "Time": np.arange(T) * 100, "C": C, "B": B}))
@@ -68,7 +68,32 @@ def test_placebo_centred():
     assert obs > np.percentile(pl, 95)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__" and len(sys.argv) == 1:
     for f in (test_collapse_detector, test_neg_return, test_recovers_effect_and_null, test_placebo_centred):
         f()
         print("PASS", f.__name__)
+
+
+def test_t1_runner_end_to_end():
+    """Run src/p4_run_t1.run() on a synthetic panel shaped like TSDat123 (bypasses the signature guard)."""
+    import p4_run_t1 as r
+    rng = np.random.default_rng(7)
+    sim = simulate(5.0, n_nga=20, T=50, seed=3, drop=4.0, growth=0.05)
+    d = sim[["NGA", "Time"]].copy()
+    d["PolID"], d["PropCoded"] = "p", 90.0
+    for c in tl.C_COMPONENTS:  # components share the planted C plus noise
+        d[c] = sim.C.values + rng.normal(0, 0.1, len(d))
+    d["B"] = np.where(rng.random(len(d)) < 0.3, np.nan, sim.B.values)
+    d["era"] = 0
+    mi = pd.concat([d[["NGA", "PolID", "Time"]].assign(Pop=sim.B.values, n=k + 1) for k in range(r.N_DRAWS)])
+    r.build = lambda _x: (d, mi)
+    r.N_DRAWS, r.N_BOOT_PER_DRAW, r.N_PLACEBO = 2, 20, 20
+    res = r.run("unused", dry=False, holdout=False)
+    assert set(res) >= {"drop", "mi", "worst", "placebo_p95", "n_events", "loo_share_or_gt1"}
+    assert res["n_events"] >= 10, res["n_events"]
+    assert res["mi"]["OR_median"] > 1
+
+
+if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "runner":
+    test_t1_runner_end_to_end()
+    print("PASS test_t1_runner_end_to_end")

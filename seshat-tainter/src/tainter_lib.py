@@ -4,8 +4,9 @@ Implements the ★ primary definitions of docs/B2_options.md:
   C1  = PC1 of standardised [Hier, Gov, Info, Money] (missing-as-missing), fitted on training rows
   B1  = log10 polity population
   R1  = negative-return episode at t: C(t) - C(t-w) > 0 and B(t) - B(t-w) <= 0, w = 3 centuries
-  K1  = collapse event: C falls >= thr * sd(C) below its running max over the prior 3 centuries
-        and stays below that line for >= 2 consecutive centuries
+  K1  = collapse event: C falls >= thr * sd below its running max over the prior 3 centuries
+        and stays below that line for >= 2 consecutive centuries. ★ sd = sd_delta (SD of 3-century
+        changes), thr = 2.0; alternative K1-global: sd = SD of C over all rows, thr = 1.0
 Only validated on synthetic data (tests/test_synthetic.py) until PREREG is signed.
 """
 import numpy as np
@@ -22,6 +23,16 @@ def fit_c1(train: pd.DataFrame, cols=C_COMPONENTS):
     p = PCA(n_components=1).fit(((train[cols] - mu) / sd).values)
     w = p.components_[0] * np.sign(p.components_[0].sum())
     return lambda d: ((d[cols] - mu) / sd).values @ w
+
+
+def sd_delta(panel: pd.DataFrame, w: int = 3, c="C") -> float:
+    """Pooled SD of w-century changes in C: the reference scale for K1 (★ since 2026-10-18 draft)."""
+    ds = []
+    for _, g in panel.sort_values("Time").groupby("NGA", sort=False):
+        lag = g.set_index("Time")[c].reindex(g.Time - 100 * w).values
+        ds.append(g[c].values - lag)
+    d = np.concatenate(ds)
+    return float(np.nanstd(d, ddof=1))
 
 
 def add_neg_return(panel: pd.DataFrame, w: int = 3, c="C", b="B") -> pd.DataFrame:
@@ -67,13 +78,31 @@ def add_collapse(panel: pd.DataFrame, sd: float, thr: float = 1.0, back: int = 3
     return pd.concat(out)
 
 
+def firth_logit(X: np.ndarray, y: np.ndarray, maxiter=100, tol=1e-8):
+    """Firth (1993) bias-reduced logistic regression: finite estimates under separation / rare events."""
+    beta = np.zeros(X.shape[1])
+    for _ in range(maxiter):
+        p = 1 / (1 + np.exp(-(X @ beta)))
+        w = p * (1 - p)
+        info = X.T @ (w[:, None] * X)
+        inv = np.linalg.pinv(info)
+        h = w * np.einsum("ij,jk,ik->i", X, inv, X)
+        step = inv @ (X.T @ (y - p + h * (0.5 - p)))
+        beta = beta + np.clip(step, -5, 5)
+        if np.max(np.abs(step)) < tol:
+            break
+    return beta
+
+
 def logit_or(df: pd.DataFrame, y: str, x: str, controls=(), add_const=True):
+    """Odds ratio for x from a Firth-penalised logit of y on x + controls."""
     d = df[[y, x, *controls]].dropna()
     X = d[[x, *controls]].astype(float)
+    X = X[[c for c in X.columns if c == x or X[c].std() > 0]]  # drop constant controls (e.g. empty era dummies)
     if add_const:
         X = sm.add_constant(X, has_constant="add")
-    res = sm.Logit(d[y].astype(float), X).fit(disp=0, method="bfgs", maxiter=500)
-    return float(np.exp(res.params[x])), len(d)
+    beta = firth_logit(X.values, d[y].astype(float).values)
+    return float(np.exp(beta[list(X.columns).index(x)])), len(d)
 
 
 def cluster_bootstrap_or(df, y, x, controls=(), cluster="NGA", n_boot=2000, seed=0):
