@@ -7,9 +7,12 @@ The full brief is in `HANDOFF.md`. This file tracks status and how to continue.
 | Phase | State |
 |---|---|
 | 0 Setup | ✅ Structure, pinned env, Equinox2020 fetch script. Polaris still needed (see below) |
-| 1 Tutor pass | ✅ Drafted: `PRIMER.md`, Latium walkthrough, `LEARNING.md` Phase 1. **Check-in 1 pending** |
-| C1 Workshop | 📝 Prepared, not run: `SEDENTIS_V2.md` |
-| 2–6, C2–C4 | Not started |
+| 1 Tutor pass | ✅ `PRIMER.md`, Latium walk-through, `LEARNING.md` Phase 1. Check-in 1 pending |
+| C1 Workshop | 🟡 Q1 decided (strict reading, 2026-10-18). Q1b–Q5 proposals pending (`SEDENTIS_V2.md` §7) |
+| G2 Blind prep | ✅ Holdout locked (`holdout_ngas.csv`); coverage scan; draft `variable_roles.csv`; OC–yield collinearity check |
+| 2 Reproduce | ✅ Done on Equinox. All 8 components rebuilt exactly; PC1 69–84% (log 003) |
+| B2 / PREREG | 📝 Options in `docs/B2_options.md`; DRAFT blocks T1, HS1–HS6 in `PREREG.md`. **Unsigned: this is the stop point** |
+| 3–6, C3–C4 | ⛔ Blocked until PREREG is signed. Phase 3 reveals outcomes, so it waits too |
 
 ## Continue on PC
 
@@ -25,7 +28,8 @@ The full brief is in `HANDOFF.md`. This file tracks status and how to continue.
    - Note the GitHub repo name for Polaris, if there is one. Then it can go into `fetch_data.sh`.
    - Check whether CrisisDB has a public download.
    - Get Cliopatria from Zenodo if you want maps (optional, Phase 3).
-3. **Answer the open questions:**
+3. **Sign or amend:** `variable_roles.csv`, the ★ choices in `docs/B2_options.md`, and the DRAFT blocks in `PREREG.md`.
+4. **Answer the open questions:**
    - `LEARNING.md` Phase 0 and Phase 1
    - `SEDENTIS_V2.md` §0 and §6
 

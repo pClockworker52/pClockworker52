@@ -1,0 +1,163 @@
+ShortName,share_coded,ngas_with_any,n_rows_coded,Variable,Category
+PolPop,0.373,27,393,Polity Population,scale
+PolTerr,0.391,27,412,Polity territory,scale
+CapPop,0.556,28,586,Population of the largest settlement,scale
+AdmLev,0.627,29,661,Administrative levels,levels
+MilLev,0.498,29,525,Military levels,levels
+ReligLev,0.583,29,614,Religious levels,levels
+SettlHier,0.99,29,1043,Settlement hierarchy,levels
+ProfOfficer,0.637,29,671,Professional military officers,government
+ProfSoldier,0.622,29,656,Professional soldiers,government
+ProfPriest,0.62,29,654,Professional priesthood,government
+FullTBur,0.676,29,712,Full-time bureaucrats,government
+ExamSyst,0.574,28,605,Examination system,government
+MeritProm,0.557,28,587,Merit promotion,government
+GovtBldg,0.738,28,778,Specialized government buildings,government
+Court,0.582,28,613,Courts,government
+LegCode,0.633,28,667,Formal legal code,government
+Judge,0.618,29,651,Judges,government
+Lawyer,0.576,29,607,Professional Lawyers,government
+Irrigation,0.728,29,767,irrigation systems,infrastruct
+WaterSuppl,0.52,29,548,drinking water supply systems,infrastruct
+Market,0.58,28,611,markets,infrastruct
+FoodStor,0.656,29,691,food storage sites,infrastruct
+Road,0.601,29,633,Roads,infrastruct
+Bridge,0.424,28,447,Bridges,infrastruct
+Canal,0.495,28,522,Canals,infrastruct
+Port,0.559,29,589,Ports,infrastruct
+Mine,0.509,27,536,Mines or quarries,infrastruct
+Courier,0.559,27,589,Couriers,infrastruct
+PostStation,0.587,27,619,Postal stations,infrastruct
+PostService,0.573,27,604,General postal service,infrastruct
+Mnemonic,0.178,21,188,Mnemonic devices,writing
+NonWRecord,0.395,29,416,Nonwritten records,writing
+WRecord,0.836,29,881,Written records,writing
+Script,0.824,29,868,Script,writing
+NonPhWrit,0.383,18,404,Non-phonetic writing,writing
+PhAlph,0.784,29,826,Phonetic alphabetic writing,writing
+Lists,0.763,28,804,Lists tables and classifications,writing
+Calendar,0.765,28,806,Calendar,texts
+SacrTxt,0.763,29,804,Sacred Texts,texts
+ReligLit,0.803,29,846,Religious literature,texts
+PractLit,0.769,29,811,Practical literature,texts
+History,0.761,29,802,History,texts
+Philosophy,0.728,28,767,Philosophy,texts
+SciLit,0.746,28,786,Scientific literature,texts
+Fiction,0.764,29,805,Fiction,texts
+Article,0.528,29,557,Articles,money
+Token,0.292,27,308,Tokens,money
+PrecMetal,0.406,29,428,Precious metals,money
+ForCoin,0.588,28,620,Foreign coins,money
+IndigCoin,0.746,28,786,Indigenous coins,money
+PaperCurr,0.704,28,742,Paper currency,money
+Copper,0.858,27,904,Copper,MilMetal
+Bronze,0.894,26,942,Bronze,MilMetal
+Iron,0.941,28,992,Iron,MilMetal
+Steel,0.884,27,932,Steel,MilMetal
+Javelin,0.686,27,723,Javelins,MilProj
+Atlatl,0.899,25,948,Atlatl,MilProj
+Sling,0.685,26,722,Slings,MilProj
+SelfBow,0.731,26,771,Self bow,MilProj
+CompBow,0.828,26,873,Composite bow,MilProj
+Crossbow,0.727,29,766,Crossbow,MilProj
+TensSiege,0.715,28,754,Tension siege engines,MilProj
+SlingSiege,0.771,28,813,Sling siege engines,MilProj
+Artillery,0.834,28,879,Gunpowder siege artillery,MilProj
+HandGun,0.875,29,922,Handheld firearms,MilProj
+WarClub,0.711,26,749,War clubs,Weapon
+BattleAxe,0.745,27,785,Battle axes,Weapon
+Dagger,0.788,27,831,Daggers,Weapon
+Sword,0.824,29,869,Swords,Weapon
+Spear,0.829,28,874,Spears,Weapon
+Polearm,0.631,27,665,Polearms,Weapon
+Dog,0.419,25,442,Dogs,MilAnimal
+Donkey,0.632,28,666,Donkeys,MilAnimal
+Horse,0.814,28,858,Horses,MilAnimal
+Camel,0.79,28,833,Camels,MilAnimal
+Elephant,0.794,28,837,Elephants,MilAnimal
+WoodArmor,0.506,26,533,Wood bark etc,Armor
+LeathArmor,0.575,28,606,Leather cloth,Armor
+Shield,0.708,27,746,Shields,Armor
+Helmet,0.788,29,831,Helmets,Armor
+Breastplate,0.676,25,712,Breastplates,Armor
+LimbProt,0.694,24,732,Limb protection,Armor
+Chainmail,0.749,28,789,Chainmail,Armor
+ScaleArmor,0.664,27,700,Scaled armor,Armor
+LaminArmor,0.615,26,648,Laminar armor,Armor
+PlateArmor,0.698,27,736,Plate armor,Armor
+SmallVessel,0.497,28,524,Small vessels (canoes etc),Naval
+Merchant,0.515,27,543,Merchant ships pressed into service,Naval
+SpecVessel,0.647,28,682,Specialized military vessels,Naval
+DefPosition,0.707,28,745,Settlements in a defensive position,MilFort
+Palisade,0.601,28,633,Wooden palisades,MilFort
+Rampart,0.689,27,726,Earth ramparts,MilFort
+Ditch,0.657,25,693,Ditch,MilFort
+Moat,0.696,25,734,Moat,MilFort
+NonMStone,0.614,28,647,Stone walls (non-mortared),MilFort
+StoneWall,0.688,29,725,Stone walls (mortared),MilFort
+FortCamp,0.619,28,652,Fortified camps,MilFort
+ComplxFort,0.741,29,781,Complex fortifications,MilFort
+LongWall,0.527,29,555,Long walls,MilFort
+ModernFort,0.902,28,951,Modern fortifications,MilFort
+StandArmy,0.604,29,637,Standing armies,MilOrg
+UnifEquip,0.494,28,521,Uniformity of equipment,MilOrg
+ArmySize,0.031,8,33,Army size,MilQuant
+LargestArmy,0.225,25,237,Largest fielded army,MilQuant
+MaxLogLag,0.102,17,107,Maximum logistical lag,MilQuant
+ExternalW,0.662,29,698,Inter-polity wars,WarType
+InternalW,0.555,28,585,Internal wars,WarType
+IntraElitW,0.473,26,499,Intra-elite conflicts,WarType
+PopUprising,0.392,27,413,Popular uprisings,WarType
+MilRevolt,0.384,25,405,Military revolts,WarType
+SepRebellion,0.427,27,450,Separatist rebellions,WarType
+EthnicW,0.499,28,526,Wars within same ethnic group,WarDist
+DiffDialectW,0.344,25,363,Wars involving groups with different dialects,WarDist
+DiffLangW,0.496,28,523,Wars involving groups with different languages,WarDist
+DiffLFamW,0.472,28,497,Wars involving groups with different language families,WarDist
+DiffArchW,0.369,23,389,Wars between groups from different archaeological cultures,WarDist
+DiffCultW,0.425,26,448,Wars between different religious sects,WarDist
+DiffReligW,0.592,29,624,Wars between different world religions,WarDist
+ReligTribW,0.505,28,532,Wars of world religion against tribal religion,WarDist
+CivBarbW,0.126,1,133,Wars on Civilization/Barbarism frontier,WarDist
+StepFrontW,0.515,27,543,Wars on steppe frontier,WarDist
+AgriFrontW,0.513,26,541,Wars on agricultural frontier,WarDist
+Annexation,0.451,27,475,Annexation,WarIntensity
+Looting,0.422,27,445,Looting,WarIntensity
+Sack,0.356,27,375,Sack,WarIntensity
+Rape,0.268,19,282,Rape,WarIntensity
+Enslavement,0.369,25,389,Enslavement,WarIntensity
+Imprisonment,0.337,26,355,Imprisonment,WarIntensity
+Destruction,0.412,24,434,Destruction,WarIntensity
+Torture,0.274,22,289,Torture,WarIntensity
+Mutilation,0.289,23,305,Mutilation,WarIntensity
+TargMassacre,0.38,27,400,Targeted massacre,WarIntensity
+GenMassacre,0.306,23,322,General massacre,WarIntensity
+Extermination,0.33,22,348,Extermination,WarIntensity
+Ethnocide,0.362,21,382,Ethnocide,WarIntensity
+SkeletViol,0.356,17,375,Skeletal evidence of violence,ArchWar
+MassBurial,0.237,11,250,Mass burials,ArchWar
+SettlDestr,0.304,15,320,Settlement destruction,ArchWar
+PictorialW,0.331,13,349,Pictorial evidence of warfare,ArchWar
+HeredStatus,0.483,29,509,elite status is hereditary,Stratification
+FormalHStatus,0.163,25,172,formal system of hereditary social status,Stratification
+SelectStatus,0.214,27,226,elite status is selected,Stratification
+IdEqual,0.435,28,458,Ideological reinforcement of equality,AA
+IdElitCom,0.391,27,412,Ideological thought equates elites and commoners,AA
+IdRuleCom,0.427,28,450,Ideological thought equates rulers and commoners,AA
+IdProsocial,0.256,27,270,Ideology reinforces prosociality,AA
+PublGoods,0.218,19,230,production of public goods,AA
+RuleLegGods,0.351,28,370,Rulers are legitimated by gods,AA
+RuleGods,0.343,28,361,Rulers are gods,AA
+ConstrGov,0.181,18,191,Constraint on executive by government,AA
+ConstrNonGov,0.163,17,172,Constraint on executive by non-government,AA
+Impeach,0.202,19,213,Impeachment,AA
+PrimaryMSP,0.478,29,504,Moral concern is primary,MSP
+CertainMSP,0.478,29,504,Moralizing enforcement is certain,MSP
+BroadMSP,0.478,29,504,Moralizing norms are broad,MSP
+TargetedMSP,0.478,29,504,Moralizing enforcement is targeted,MSP
+RulerMSP,0.478,29,504,Moralizing enforcement of rulers,MSP
+ElitesMSP,0.478,29,504,Moralizing religion adopted by elites,MSP
+CommonersMSP,0.478,29,504,Moralizing religion adopted by commoners,MSP
+AfterlifeMSP,0.473,28,499,Moralizing enforcement in afterlife,MSP
+ThislifeMSP,0.436,28,460,Moralizing enforcement in this life,MSP
+AgencyMSP,0.46,28,485,Moralizing enforcement is agentic,MSP

@@ -1,0 +1,4 @@
+rows: 1054  with yield: 1018  yield==0: 148
+OC_A: n=768 pearson=0.53 spearman=0.49 | within-NGA pearson=0.68
+OC_B: n=804 pearson=0.18 spearman=0.65 | within-NGA pearson=0.24
+between-NGA SD of mean logY: 0.335  mean within-NGA SD: 0.185

@@ -149,3 +149,15 @@ The Metaculus bot failed at a 3-month horizon, where all of Sedentis' structural
 - **Sedentism is a dose.** Option closure is treated as continuous. The phase-transition claim is dropped as a premise.
 - **Strict reading, committed in advance:** if option closure adds nothing once productivity is controlled for, then **v1 is refuted, and Sedentis survives only as v1.5**. With this data, v1.5 cannot be distinguished from generic dissipative-structure thermodynamics ("Prigogine").
 - **Measurement-error safeguard:** v1 counts as supported only if the option-closure effect clears a size fixed in PREREG and survives a measurement-error sensitivity check on the productivity control. The size is not yet set.
+
+### Q1b–Q5: proposals pending Peter (drafted 2026-10-18, not decided)
+
+| Q | Proposal | Reason |
+|---|---|---|
+| 1b Legibility thesis as the core of v2? | **Keep as a candidate core, test later.** HS6 is untestable with Equinox (log 002). Reassess with Polaris and CrisisDB. Add Scott (1998) to the prior-art table. | It's the most distinctive claim, but there's no consequence-shock data yet |
+| 2 FEP-distinct prediction | **Adopt (i) precision/age as an exploratory add-on to HS1:** does polity age add to OC in predicting overshoot lag? Report it as exploratory, not as a verdict. (ii) shock novelty: untestable without CrisisDB. | Only (i) has a Seshat proxy (polity duration) |
+| 3 Option closure | **OC-A primary, OC-B alternative** (see `docs/B2_options.md` §7) | OC-A matches the definition. OC-B checks the yield confound (r = 0.24 vs 0.68) |
+| 4 "Action dissipates, perception conserves" in v2? | **Not in v2.** Keep it as a v1.5 background claim, labelled untested. | No quantitative form; physically contested |
+| 5 Failure at century scale counts | **Yes**, implied by your strict reading | — |
+
+**Consequence of the strict reading for what v1.5 can claim:** v1.5 has no Seshat-testable prediction distinct from the gradient rival. If v1 is refuted, the C4 revision should say that Sedentis is *not distinguishable from Prigogine + Tainter with this data*. That is a verdict about testability, not a proof that Sedentis is redundant.

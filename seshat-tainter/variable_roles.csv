@@ -1,0 +1,167 @@
+status,ShortName,Variable,Category,role,alt,note,share_coded,ngas_with_any
+DRAFT-unsigned,PolPop,Polity Population,scale,B,"C (C_full, circular variant, flagged)","Scale CCs: Pop, Terr = benefit proxy; Cap kept out of B (overlaps cities = option closure)",0.373,27.0
+DRAFT-unsigned,PolTerr,Polity territory,scale,B,"C (C_full, circular variant, flagged)","Scale CCs: Pop, Terr = benefit proxy; Cap kept out of B (overlaps cities = option closure)",0.391,27.0
+DRAFT-unsigned,CapPop,Population of the largest settlement,scale,unused,C (C_full),Cap CC: ambiguous (scale vs urban fixed capital); excluded from B and OC,0.556,28.0
+DRAFT-unsigned,AdmLev,Administrative levels,levels,C,,"Hier CC (AdmLev, MilLev, SettlHier; ReligLev only in Hier4)",0.627,29.0
+DRAFT-unsigned,MilLev,Military levels,levels,C,,"Hier CC (AdmLev, MilLev, SettlHier; ReligLev only in Hier4)",0.498,29.0
+DRAFT-unsigned,ReligLev,Religious levels,levels,unused,,only in Hier4 variant; release Hier uses 3 levels,0.583,29.0
+DRAFT-unsigned,SettlHier,Settlement hierarchy,levels,C,,"Hier CC (AdmLev, MilLev, SettlHier; ReligLev only in Hier4)",0.99,29.0
+DRAFT-unsigned,ProfOfficer,Professional military officers,government,C,,Gov CC,0.637,29.0
+DRAFT-unsigned,ProfSoldier,Professional soldiers,government,C,,Gov CC,0.622,29.0
+DRAFT-unsigned,ProfPriest,Professional priesthood,government,C,,Gov CC,0.62,29.0
+DRAFT-unsigned,FullTBur,Full-time bureaucrats,government,C,,Gov CC,0.676,29.0
+DRAFT-unsigned,ExamSyst,Examination system,government,C,,Gov CC,0.574,28.0
+DRAFT-unsigned,MeritProm,Merit promotion,government,C,,Gov CC,0.557,28.0
+DRAFT-unsigned,GovtBldg,Specialized government buildings,government,C,,Gov CC,0.738,28.0
+DRAFT-unsigned,Court,Courts,government,C,,Gov CC,0.582,28.0
+DRAFT-unsigned,LegCode,Formal legal code,government,C,,Gov CC,0.633,28.0
+DRAFT-unsigned,Judge,Judges,government,C,,Gov CC,0.618,29.0
+DRAFT-unsigned,Lawyer,Professional Lawyers,government,C,,Gov CC,0.576,29.0
+DRAFT-unsigned,Irrigation,irrigation systems,infrastruct,OC,C (C_full),"OC-A: fixed, maintained capital; removed from C",0.728,29.0
+DRAFT-unsigned,WaterSuppl,drinking water supply systems,infrastruct,OC,C (C_full),"OC-A: fixed, maintained capital; removed from C",0.52,29.0
+DRAFT-unsigned,Market,markets,infrastruct,OC,C (C_full),"OC-A: fixed, maintained capital; removed from C",0.58,28.0
+DRAFT-unsigned,FoodStor,food storage sites,infrastruct,OC,C (C_full),"OC-A: fixed, maintained capital; removed from C",0.656,29.0
+DRAFT-unsigned,Road,Roads,infrastruct,OC,C (C_full),"OC-A: fixed, maintained capital; removed from C",0.601,29.0
+DRAFT-unsigned,Bridge,Bridges,infrastruct,OC,C (C_full),"OC-A: fixed, maintained capital; removed from C",0.424,28.0
+DRAFT-unsigned,Canal,Canals,infrastruct,OC,C (C_full),"OC-A: fixed, maintained capital; removed from C",0.495,28.0
+DRAFT-unsigned,Port,Ports,infrastruct,OC,C (C_full),"OC-A: fixed, maintained capital; removed from C",0.559,29.0
+DRAFT-unsigned,Mine,Mines or quarries,infrastruct,OC,C (C_full),"OC-A: fixed, maintained capital; removed from C",0.509,27.0
+DRAFT-unsigned,Courier,Couriers,infrastruct,OC,C (C_full),"OC-A: fixed, maintained capital; removed from C",0.559,27.0
+DRAFT-unsigned,PostStation,Postal stations,infrastruct,OC,C (C_full),"OC-A: fixed, maintained capital; removed from C",0.587,27.0
+DRAFT-unsigned,PostService,General postal service,infrastruct,OC,C (C_full),"OC-A: fixed, maintained capital; removed from C",0.573,27.0
+DRAFT-unsigned,Mnemonic,Mnemonic devices,writing,C,,Info CC,0.178,21.0
+DRAFT-unsigned,NonWRecord,Nonwritten records,writing,C,,Info CC,0.395,29.0
+DRAFT-unsigned,WRecord,Written records,writing,C,,Info CC,0.836,29.0
+DRAFT-unsigned,Script,Script,writing,C,,Info CC,0.824,29.0
+DRAFT-unsigned,NonPhWrit,Non-phonetic writing,writing,unused,,not used by release Info CC,0.383,18.0
+DRAFT-unsigned,PhAlph,Phonetic alphabetic writing,writing,unused,,not used by release Info CC,0.784,29.0
+DRAFT-unsigned,Lists,Lists tables and classifications,writing,C,,Info CC,0.763,28.0
+DRAFT-unsigned,Calendar,Calendar,texts,C,,Info CC,0.765,28.0
+DRAFT-unsigned,SacrTxt,Sacred Texts,texts,C,,Info CC,0.763,29.0
+DRAFT-unsigned,ReligLit,Religious literature,texts,C,,Info CC,0.803,29.0
+DRAFT-unsigned,PractLit,Practical literature,texts,C,,Info CC,0.769,29.0
+DRAFT-unsigned,History,History,texts,C,,Info CC,0.761,29.0
+DRAFT-unsigned,Philosophy,Philosophy,texts,C,,Info CC,0.728,28.0
+DRAFT-unsigned,SciLit,Scientific literature,texts,C,,Info CC,0.746,28.0
+DRAFT-unsigned,Fiction,Fiction,texts,C,,Info CC,0.764,29.0
+DRAFT-unsigned,Article,Articles,money,C,,Money CC (ordinal 1-6),0.528,29.0
+DRAFT-unsigned,Token,Tokens,money,C,,Money CC (ordinal 1-6),0.292,27.0
+DRAFT-unsigned,PrecMetal,Precious metals,money,C,,Money CC (ordinal 1-6),0.406,29.0
+DRAFT-unsigned,ForCoin,Foreign coins,money,C,,Money CC (ordinal 1-6),0.588,28.0
+DRAFT-unsigned,IndigCoin,Indigenous coins,money,C,,Money CC (ordinal 1-6),0.746,28.0
+DRAFT-unsigned,PaperCurr,Paper currency,money,C,,Money CC (ordinal 1-6),0.704,28.0
+DRAFT-unsigned,Copper,Copper,MilMetal,unused,,military technology,0.858,27.0
+DRAFT-unsigned,Bronze,Bronze,MilMetal,unused,,military technology,0.894,26.0
+DRAFT-unsigned,Iron,Iron,MilMetal,unused,,military technology,0.941,28.0
+DRAFT-unsigned,Steel,Steel,MilMetal,unused,,military technology,0.884,27.0
+DRAFT-unsigned,Javelin,Javelins,MilProj,unused,,military technology,0.686,27.0
+DRAFT-unsigned,Atlatl,Atlatl,MilProj,unused,,military technology,0.899,25.0
+DRAFT-unsigned,Sling,Slings,MilProj,unused,,military technology,0.685,26.0
+DRAFT-unsigned,SelfBow,Self bow,MilProj,unused,,military technology,0.731,26.0
+DRAFT-unsigned,CompBow,Composite bow,MilProj,unused,,military technology,0.828,26.0
+DRAFT-unsigned,Crossbow,Crossbow,MilProj,unused,,military technology,0.727,29.0
+DRAFT-unsigned,TensSiege,Tension siege engines,MilProj,unused,,military technology,0.715,28.0
+DRAFT-unsigned,SlingSiege,Sling siege engines,MilProj,unused,,military technology,0.771,28.0
+DRAFT-unsigned,Artillery,Gunpowder siege artillery,MilProj,unused,,military technology,0.834,28.0
+DRAFT-unsigned,HandGun,Handheld firearms,MilProj,unused,,military technology,0.875,29.0
+DRAFT-unsigned,WarClub,War clubs,Weapon,unused,,military technology,0.711,26.0
+DRAFT-unsigned,BattleAxe,Battle axes,Weapon,unused,,military technology,0.745,27.0
+DRAFT-unsigned,Dagger,Daggers,Weapon,unused,,military technology,0.788,27.0
+DRAFT-unsigned,Sword,Swords,Weapon,unused,,military technology,0.824,29.0
+DRAFT-unsigned,Spear,Spears,Weapon,unused,,military technology,0.829,28.0
+DRAFT-unsigned,Polearm,Polearms,Weapon,unused,,military technology,0.631,27.0
+DRAFT-unsigned,Dog,Dogs,MilAnimal,unused,,military technology,0.419,25.0
+DRAFT-unsigned,Donkey,Donkeys,MilAnimal,unused,,military technology,0.632,28.0
+DRAFT-unsigned,Horse,Horses,MilAnimal,unused,,military technology,0.814,28.0
+DRAFT-unsigned,Camel,Camels,MilAnimal,unused,,military technology,0.79,28.0
+DRAFT-unsigned,Elephant,Elephants,MilAnimal,unused,,military technology,0.794,28.0
+DRAFT-unsigned,Other,Other,MilAnimal,unused,,military technology,,
+DRAFT-unsigned,WoodArmor,Wood bark etc,Armor,unused,,military technology,0.506,26.0
+DRAFT-unsigned,LeathArmor,Leather cloth,Armor,unused,,military technology,0.575,28.0
+DRAFT-unsigned,Shield,Shields,Armor,unused,,military technology,0.708,27.0
+DRAFT-unsigned,Helmet,Helmets,Armor,unused,,military technology,0.788,29.0
+DRAFT-unsigned,Breastplate,Breastplates,Armor,unused,,military technology,0.676,25.0
+DRAFT-unsigned,LimbProt,Limb protection,Armor,unused,,military technology,0.694,24.0
+DRAFT-unsigned,Chainmail,Chainmail,Armor,unused,,military technology,0.749,28.0
+DRAFT-unsigned,ScaleArmor,Scaled armor,Armor,unused,,military technology,0.664,27.0
+DRAFT-unsigned,LaminArmor,Laminar armor,Armor,unused,,military technology,0.615,26.0
+DRAFT-unsigned,PlateArmor,Plate armor,Armor,unused,,military technology,0.698,27.0
+DRAFT-unsigned,SmallVessel,Small vessels (canoes etc),Naval,unused,,military technology,0.497,28.0
+DRAFT-unsigned,Merchant,Merchant ships pressed into service,Naval,unused,,military technology,0.515,27.0
+DRAFT-unsigned,SpecVessel,Specialized military vessels,Naval,unused,,military technology,0.647,28.0
+DRAFT-unsigned,DefPosition,Settlements in a defensive position,MilFort,OC,,OC-B: fortification; outside SPC,0.707,28.0
+DRAFT-unsigned,Palisade,Wooden palisades,MilFort,OC,,OC-B: fortification; outside SPC,0.601,28.0
+DRAFT-unsigned,Rampart,Earth ramparts,MilFort,OC,,OC-B: fortification; outside SPC,0.689,27.0
+DRAFT-unsigned,Ditch,Ditch,MilFort,OC,,OC-B: fortification; outside SPC,0.657,25.0
+DRAFT-unsigned,Moat,Moat,MilFort,OC,,OC-B: fortification; outside SPC,0.696,25.0
+DRAFT-unsigned,NonMStone,Stone walls (non-mortared),MilFort,OC,,OC-B: fortification; outside SPC,0.614,28.0
+DRAFT-unsigned,StoneWall,Stone walls (mortared),MilFort,OC,,OC-B: fortification; outside SPC,0.688,29.0
+DRAFT-unsigned,FortCamp,Fortified camps,MilFort,OC,,OC-B: fortification; outside SPC,0.619,28.0
+DRAFT-unsigned,ComplxFort,Complex fortifications,MilFort,OC,,OC-B: fortification; outside SPC,0.741,29.0
+DRAFT-unsigned,LongWall,Long walls,MilFort,OC,,OC-B: fortification; outside SPC,0.527,29.0
+DRAFT-unsigned,ModernFort,Modern fortifications,MilFort,OC,,OC-B: fortification; outside SPC,0.902,28.0
+DRAFT-unsigned,StandArmy,Standing armies,MilOrg,unused,,military technology,0.604,29.0
+DRAFT-unsigned,UnifEquip,Uniformity of equipment,MilOrg,unused,,military technology,0.494,28.0
+DRAFT-unsigned,ArmySize,Army size,MilQuant,unused,,military technology,0.031,8.0
+DRAFT-unsigned,LargestArmy,Largest fielded army,MilQuant,unused,,military technology,0.225,25.0
+DRAFT-unsigned,MaxLogLag,Maximum logistical lag,MilQuant,unused,,military technology,0.102,17.0
+DRAFT-unsigned,ExternalW,Inter-polity wars,WarType,control,,warfare pressure: confounder for OC-B (fortification ~ threat),0.662,29.0
+DRAFT-unsigned,InternalW,Internal wars,WarType,control,,warfare pressure: confounder for OC-B (fortification ~ threat),0.555,28.0
+DRAFT-unsigned,IntraElitW,Intra-elite conflicts,WarType,control,,warfare pressure: confounder for OC-B (fortification ~ threat),0.473,26.0
+DRAFT-unsigned,PopUprising,Popular uprisings,WarType,control,,warfare pressure: confounder for OC-B (fortification ~ threat),0.392,27.0
+DRAFT-unsigned,MilRevolt,Military revolts,WarType,control,,warfare pressure: confounder for OC-B (fortification ~ threat),0.384,25.0
+DRAFT-unsigned,SepRebellion,Separatist rebellions,WarType,control,,warfare pressure: confounder for OC-B (fortification ~ threat),0.427,27.0
+DRAFT-unsigned,EthnicW,Wars within same ethnic group,WarDist,unused,,,0.499,28.0
+DRAFT-unsigned,DiffDialectW,Wars involving groups with different dialects,WarDist,unused,,,0.344,25.0
+DRAFT-unsigned,DiffLangW,Wars involving groups with different languages,WarDist,unused,,,0.496,28.0
+DRAFT-unsigned,DiffLFamW,Wars involving groups with different language families,WarDist,unused,,,0.472,28.0
+DRAFT-unsigned,DiffArchW,Wars between groups from different archaeological cultures,WarDist,unused,,,0.369,23.0
+DRAFT-unsigned,DiffCultW,Wars between different religious sects,WarDist,unused,,,0.425,26.0
+DRAFT-unsigned,DiffReligW,Wars between different world religions,WarDist,unused,,,0.592,29.0
+DRAFT-unsigned,ReligTribW,Wars of world religion against tribal religion,WarDist,unused,,,0.505,28.0
+DRAFT-unsigned,CivBarbW,Wars on Civilization/Barbarism frontier,WarDist,unused,,,0.126,1.0
+DRAFT-unsigned,StepFrontW,Wars on steppe frontier,WarDist,unused,,,0.515,27.0
+DRAFT-unsigned,AgriFrontW,Wars on agricultural frontier,WarDist,unused,,,0.513,26.0
+DRAFT-unsigned,Annexation,Annexation,WarIntensity,shock,,"candidate shock markers (Sack, Destruction, Annexation); 27-45% coded",0.451,27.0
+DRAFT-unsigned,Looting,Looting,WarIntensity,shock,,"candidate shock markers (Sack, Destruction, Annexation); 27-45% coded",0.422,27.0
+DRAFT-unsigned,Sack,Sack,WarIntensity,shock,,"candidate shock markers (Sack, Destruction, Annexation); 27-45% coded",0.356,27.0
+DRAFT-unsigned,Rape,Rape,WarIntensity,shock,,"candidate shock markers (Sack, Destruction, Annexation); 27-45% coded",0.268,19.0
+DRAFT-unsigned,Enslavement,Enslavement,WarIntensity,shock,,"candidate shock markers (Sack, Destruction, Annexation); 27-45% coded",0.369,25.0
+DRAFT-unsigned,Imprisonment,Imprisonment,WarIntensity,shock,,"candidate shock markers (Sack, Destruction, Annexation); 27-45% coded",0.337,26.0
+DRAFT-unsigned,Destruction,Destruction,WarIntensity,shock,,"candidate shock markers (Sack, Destruction, Annexation); 27-45% coded",0.412,24.0
+DRAFT-unsigned,Torture,Torture,WarIntensity,shock,,"candidate shock markers (Sack, Destruction, Annexation); 27-45% coded",0.274,22.0
+DRAFT-unsigned,Mutilation,Mutilation,WarIntensity,shock,,"candidate shock markers (Sack, Destruction, Annexation); 27-45% coded",0.289,23.0
+DRAFT-unsigned,TargMassacre,Targeted massacre,WarIntensity,shock,,"candidate shock markers (Sack, Destruction, Annexation); 27-45% coded",0.38,27.0
+DRAFT-unsigned,GenMassacre,General massacre,WarIntensity,shock,,"candidate shock markers (Sack, Destruction, Annexation); 27-45% coded",0.306,23.0
+DRAFT-unsigned,Extermination,Extermination,WarIntensity,shock,,"candidate shock markers (Sack, Destruction, Annexation); 27-45% coded",0.33,22.0
+DRAFT-unsigned,Ethnocide,Ethnocide,WarIntensity,shock,,"candidate shock markers (Sack, Destruction, Annexation); 27-45% coded",0.362,21.0
+DRAFT-unsigned,SkeletViol,Skeletal evidence of violence,ArchWar,shock,,archaeological violence evidence; sparse (24-36%),0.356,17.0
+DRAFT-unsigned,MassBurial,Mass burials,ArchWar,shock,,archaeological violence evidence; sparse (24-36%),0.237,11.0
+DRAFT-unsigned,SettlDestr,Settlement destruction,ArchWar,shock,,archaeological violence evidence; sparse (24-36%),0.304,15.0
+DRAFT-unsigned,PictorialW,Pictorial evidence of warfare,ArchWar,shock,,archaeological violence evidence; sparse (24-36%),0.331,13.0
+DRAFT-unsigned,HeredStatus,elite status is hereditary,Stratification,unused,,,0.483,29.0
+DRAFT-unsigned,FormalHStatus,formal system of hereditary social status,Stratification,unused,,,0.163,25.0
+DRAFT-unsigned,SelectStatus,elite status is selected,Stratification,unused,,,0.214,27.0
+DRAFT-unsigned,IdEqual,Ideological reinforcement of equality,AA,unused,,Axial Age vars: potential 'perception/model-revision' proxies? flagged for Q2 workshop,0.435,28.0
+DRAFT-unsigned,IdElitCom,Ideological thought equates elites and commoners,AA,unused,,Axial Age vars: potential 'perception/model-revision' proxies? flagged for Q2 workshop,0.391,27.0
+DRAFT-unsigned,IdRuleCom,Ideological thought equates rulers and commoners,AA,unused,,Axial Age vars: potential 'perception/model-revision' proxies? flagged for Q2 workshop,0.427,28.0
+DRAFT-unsigned,IdProsocial,Ideology reinforces prosociality,AA,unused,,Axial Age vars: potential 'perception/model-revision' proxies? flagged for Q2 workshop,0.256,27.0
+DRAFT-unsigned,PublGoods,production of public goods,AA,unused,,Axial Age vars: potential 'perception/model-revision' proxies? flagged for Q2 workshop,0.218,19.0
+DRAFT-unsigned,RuleLegGods,Rulers are legitimated by gods,AA,unused,,Axial Age vars: potential 'perception/model-revision' proxies? flagged for Q2 workshop,0.351,28.0
+DRAFT-unsigned,RuleGods,Rulers are gods,AA,unused,,Axial Age vars: potential 'perception/model-revision' proxies? flagged for Q2 workshop,0.343,28.0
+DRAFT-unsigned,ConstrGov,Constraint on executive by government,AA,unused,,Axial Age vars: potential 'perception/model-revision' proxies? flagged for Q2 workshop,0.181,18.0
+DRAFT-unsigned,ConstrNonGov,Constraint on executive by non-government,AA,unused,,Axial Age vars: potential 'perception/model-revision' proxies? flagged for Q2 workshop,0.163,17.0
+DRAFT-unsigned,Impeach,Impeachment,AA,unused,,Axial Age vars: potential 'perception/model-revision' proxies? flagged for Q2 workshop,0.202,19.0
+DRAFT-unsigned,PrimaryMSP,Moral concern is primary,MSP,unused,,moralizing religion; avoid (retraction history; not in any hypothesis),0.478,29.0
+DRAFT-unsigned,CertainMSP,Moralizing enforcement is certain,MSP,unused,,moralizing religion; avoid (retraction history; not in any hypothesis),0.478,29.0
+DRAFT-unsigned,BroadMSP,Moralizing norms are broad,MSP,unused,,moralizing religion; avoid (retraction history; not in any hypothesis),0.478,29.0
+DRAFT-unsigned,TargetedMSP,Moralizing enforcement is targeted,MSP,unused,,moralizing religion; avoid (retraction history; not in any hypothesis),0.478,29.0
+DRAFT-unsigned,RulerMSP,Moralizing enforcement of rulers,MSP,unused,,moralizing religion; avoid (retraction history; not in any hypothesis),0.478,29.0
+DRAFT-unsigned,ElitesMSP,Moralizing religion adopted by elites,MSP,unused,,moralizing religion; avoid (retraction history; not in any hypothesis),0.478,29.0
+DRAFT-unsigned,CommonersMSP,Moralizing religion adopted by commoners,MSP,unused,,moralizing religion; avoid (retraction history; not in any hypothesis),0.478,29.0
+DRAFT-unsigned,AfterlifeMSP,Moralizing enforcement in afterlife,MSP,unused,,moralizing religion; avoid (retraction history; not in any hypothesis),0.473,28.0
+DRAFT-unsigned,ThislifeMSP,Moralizing enforcement in this life,MSP,unused,,moralizing religion; avoid (retraction history; not in any hypothesis),0.436,28.0
+DRAFT-unsigned,AgencyMSP,Moralizing enforcement is agentic,MSP,unused,,moralizing religion; avoid (retraction history; not in any hypothesis),0.46,28.0
+DRAFT-unsigned,HistYield,Agricultural productivity t/ha/y (HistYield+ sheet),agri,control,,gradient-rival control for H-S3; modelled estimate; varies within NGA over time (mean within-NGA SD of log10 yield 0.19 vs between-NGA 0.34); 0 = pre-agricultural,,
+DRAFT-unsigned,FAO.Crop,Staple crop (NGAs sheet),agri,control,OC-C,grain vs tuber; cross-NGA only,,
+DRAFT-unsigned,PolityDuration,Polity Start-End (Polities sheet),derived,B,,secondary benefit proxy B2; risk: mechanically tied to turnover,,

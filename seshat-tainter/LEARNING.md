@@ -53,3 +53,23 @@ The one-page primer is `PRIMER.md`. The Latium walk-through is `src/p1_walkthrou
    - Rome is a good test of each. Write down *now*, before seeing other NGAs, whether you think Rome must count as a collapse. If you think it must, say why. Otherwise we risk tuning the threshold to Rome.
 2. Tainter's power-vacuum condition (in a peer-polity cluster, polities get absorbed rather than collapsing) could be tested with Seshat's NGA succession. Do you want it as a secondary hypothesis?
 3. For a mechanical engineer: SPC is PC1 of 8 standardised components. Physically, it's like a single mode shape of a coupled system. Is a single mode an adequate state variable for a system whose *failure* may be a mode decoupling, e.g. Info stays while Hierarchy falls?
+
+---
+
+## Phase 2 — Reproduce (2026-10-18)
+
+**What this tells us about Seshat:**
+- **The "single dimension" is robust.** PC1 carries 69–84% of the variance across every missing-data treatment, row selection and era. It holds within regions (87% demeaned) and with scale and infrastructure removed (80–87%).
+- **The shared long-run trend isn't the reason.** Even within a single era, the components move together.
+- **Engineering analogy:** the coupled system has one dominant mode almost everywhere. The real question (Phase 1, question 3) is whether *failure* is a decoupling, e.g. Hier falling while Info stays. Rome suggests it can be. PC1 hides such a decoupling by construction, so C3 (Hier alone) stays in the battery for that reason.
+- **The Equinox aggregates code "missing" as "absent" for Info and Gov.** That's the moralizing-gods pattern, here inside the release's own aggregate sheets.
+  - It doesn't move PC1 (r = 0.995).
+  - It could still create or erase *events*: a century whose writing variables are uncoded gets Info = 0, which looks like a crash.
+  - That is why C1 is built missing-as-missing.
+
+**What this tells us about Tainter:**
+- Tainter's C is measurable and coherent in Seshat. The bottleneck is entirely on the B side (log 002: population 37% coded, no per-capita benefit).
+
+**Questions for Peter:**
+1. C1 drops Infra from complexity so that infrastructure can serve as option closure. Tainter would count irrigation and roads as complexity. Is it acceptable that the Tainter test uses a C without infrastructure? The alternative is OC-B (fortification) for Sedentis, with full C for Tainter.
+2. B1 is *total* population supported, not per-capita benefit. Do you accept testing a "scale-supported" proxy, stated as a limitation, or do you consider that a test of something other than Tainter?
