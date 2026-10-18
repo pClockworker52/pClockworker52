@@ -1,0 +1,4 @@
+grid: 1406 NGA-centuries, 35 NGAs, 363 polities
+CC coded share: {'Pop': 0.38, 'Terr': 0.39, 'Cap': 0.64, 'Hier': 1.0, 'Gov': 0.88, 'Infra': 0.92, 'Info': 0.85, 'Money': 0.8}
+complete-case n=292 PC1 var=0.698 loadings=[0.39, 0.35, 0.37, 0.36, 0.35, 0.33, 0.36, 0.33]
+MI(20) n=1406 PC1 var=0.792 ± 0.002

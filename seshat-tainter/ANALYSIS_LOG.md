@@ -97,7 +97,7 @@ Numbered entries. Each entry records the question, script, data release, result 
 - **Result:**
   - 626 polities, 35 home NGAs (all 6 holdout NGAs present), 42 regions.
   - **Long format only:** no century grid, so a grid builder is needed for the Phase 5 rerun.
-  - All 77 social-complexity variables map to Equinox names.
+  - ~~All 77 social-complexity variables map to Equinox names.~~ **Corrected in 006:** that count included "not found" strings, and the release's crosswalk column is misaligned.
   - Range-coded share 12.7%; disputed and uncertain values each 0.6%.
   - **CrisisDB sheet:** 166 crises in 150 polities, 35 regions, −2200 to 1942.
     - 21 consequence flags: decline, collapse, epidemic, fragmentation, conquest, constitution, public goods and others.
@@ -106,3 +106,26 @@ Numbered entries. Each entry records the question, script, data release, result 
   - CrisisDB exists publicly inside Polaris.
   - **It is a list of crises only.** A polity-century *not* in CrisisDB is not coded as "no crisis". Using absence as zero would repeat the moralizing-gods error, so CrisisDB can only be used *conditional on a crisis*.
   - HS6 moves from "untestable" to "possibly testable within crises" (see PREREG HS6).
+
+## 006 — Polaris2026 century grid and PC1 (measure-level)
+
+- **Date:** 2026-10-18
+- **Script:** `src/p5_polaris_grid.py` → `data/interim/polaris_grid.csv` (gitignored), `docs/p5_polaris_pc1.txt`
+- **Data-quality finding:** Polaris2026's `Variables.equinox_variable_name` crosswalk is **misaligned**. For example:
+  - `military_level` maps to "elite status is hereditary"
+  - `professional_military_officer` maps to "Professional Lawyers"
+  - `nonwritten_record` maps to "Written records"
+  - `religious_literature` maps to "Scientific literature"
+
+  Many others are "not found". A hand-written crosswalk by variable name is used instead (in the script).
+- **Grid rules:**
+  - polity → NGA via `homeNGA`; 251 of 626 polities have none and are dropped
+  - a polity is active for the centuries within its start–end years
+  - dated values override undated ones
+  - one polity per NGA-century, the one with the most coded variables
+  - codes P = 1, IP = 0.9, A = 0, IA = 0.1, SU/U = NA
+- **Result:**
+  - 1,406 NGA-centuries, 35 NGAs, 363 polities.
+  - Coverage: population 38%, territory 39%, Gov 88%, Info 85%.
+  - **PC1 variance:** complete case 69.8% (n = 292); MI(20) 79.2% ± 0.2%. Loadings near-equal (0.33–0.39).
+- **Verdict:** **the single dimension reproduces on Polaris2026.** Equinox gave 69.4% complete case and 81.4% MI. The grid rules are my own, not Seshat's, so the Phase 5 Equinox-vs-Polaris comparison is also a test of these rules.

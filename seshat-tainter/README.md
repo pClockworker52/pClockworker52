@@ -10,7 +10,8 @@ The full brief is in `HANDOFF.md`. This file tracks status and how to continue.
 | 1 Tutor pass | ✅ `PRIMER.md`, Latium walk-through, `LEARNING.md` Phase 1. Check-in 1 pending |
 | C1 Workshop | 🟡 Q1 decided (strict reading, 2026-10-18). Q1b–Q5 proposals pending (`SEDENTIS_V2.md` §7) |
 | G2 Blind prep | ✅ Holdout locked (`holdout_ngas.csv`); coverage scan; draft `variable_roles.csv`; OC–yield collinearity check |
-| 2 Reproduce | ✅ Done on Equinox. All 8 components rebuilt exactly; PC1 69–84% (log 003) |
+| 2 Reproduce | ✅ Equinox: all 8 components rebuilt exactly; PC1 69–84% (log 003). Polaris2026 grid built; PC1 70–79% (log 006) |
+| Test code | ✅ `src/tainter_lib.py` (C1, R1, K1, logit, cluster bootstrap, placebo), validated on synthetic data only (`tests/test_synthetic.py`) |
 | B2 / PREREG | 📝 Options in `docs/B2_options.md`; DRAFT blocks T1, HS1–HS6 in `PREREG.md`. **Unsigned: this is the stop point** |
 | 3–6, C3–C4 | ⛔ Blocked until PREREG is signed. Phase 3 reveals outcomes, so it waits too |
 
